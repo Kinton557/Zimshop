@@ -1,4 +1,3 @@
-```css
 /* =========================================================
    ZIMSHOP — MAIN STYLESHEET
    ========================================================= */
@@ -41,7 +40,6 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
 }
 
 body {
@@ -56,8 +54,7 @@ body {
     Roboto,
     Arial,
     sans-serif;
-  font-size: 18px;
-  line-height: 1.65;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -183,7 +180,7 @@ main {
   border-radius: 9px;
 
   color: #555;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 
   transition:
@@ -237,7 +234,7 @@ main {
   background: var(--black);
   color: var(--white);
 
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 
   transition:
@@ -321,7 +318,7 @@ main {
   background: var(--accent-light);
   color: var(--accent-dark);
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.4px;
   text-transform: uppercase;
@@ -348,8 +345,8 @@ main {
   margin-top: 25px;
 
   color: var(--gray);
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .hero-actions {
@@ -391,7 +388,7 @@ main {
   margin-top: 20px;
 
   color: var(--gray);
-  font-size: 18px;
+  font-size: 17px;
 }
 
 
@@ -411,9 +408,9 @@ main {
 
   color: var(--accent-dark);
 
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
@@ -423,7 +420,7 @@ main {
 .form-heading h2,
 .cart-header h2,
 .cta-card h2 {
-  font-size: clamp(34px, 4vw, 48px);
+  font-size: clamp(30px, 4vw, 44px);
   line-height: 1.1;
   letter-spacing: -1.5px;
 }
@@ -438,7 +435,6 @@ main {
 .section-heading p {
   margin-top: 13px;
   color: var(--gray);
-  font-size: 18px;
 }
 
 
@@ -545,15 +541,15 @@ main {
   background: var(--accent-light);
   color: var(--accent-dark);
 
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }
 
 .product h3 {
-  font-size: 21px;
-  line-height: 1.25;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.4px;
 }
 
@@ -562,8 +558,8 @@ main {
 
   color: var(--gray);
 
-  font-size: 17px;
-  line-height: 1.55;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .product-bottom {
@@ -578,7 +574,7 @@ main {
 
 .price {
   color: var(--black);
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 900;
 }
 
@@ -601,7 +597,7 @@ main {
 
   margin-bottom: 9px;
 
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 800;
 }
 
@@ -637,7 +633,7 @@ main {
   background: var(--white);
 
   color: var(--black);
-  font-size: 18px;
+  font-size: 15px;
 
   box-shadow: var(--shadow-sm);
 
@@ -686,7 +682,7 @@ main {
 
   color: var(--gray);
 
-  font-size: 15px;
+  font-size: 13px;
 }
 
 
@@ -722,7 +718,6 @@ main {
 .empty-state p {
   margin-top: 6px;
   color: var(--gray);
-  font-size: 17px;
 }
 
 
@@ -758,13 +753,13 @@ main {
 }
 
 .benefit h3 {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .benefit p {
   margin-top: 7px;
   color: #b9b9b9;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -792,7 +787,7 @@ main {
   margin-top: 18px;
 
   color: var(--gray);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .about-highlight {
@@ -826,7 +821,6 @@ main {
 .about-highlight p {
   margin-top: 10px;
   color: #c4c4c4;
-  font-size: 17px;
 }
 
 
@@ -862,13 +856,13 @@ main {
 }
 
 .value-card h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .value-card p {
   margin-top: 7px;
   color: var(--gray);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -902,20 +896,20 @@ main {
 .step-number {
   flex: 0 0 auto;
 
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 900;
 
   color: var(--accent);
 }
 
 .step-card h3 {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .step-card p {
   margin-top: 7px;
   color: var(--gray);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -942,7 +936,6 @@ main {
 .contact-info > p {
   margin-top: 18px;
   color: var(--gray);
-  font-size: 18px;
 }
 
 .contact-cards {
@@ -999,20 +992,20 @@ main {
 
 .contact-card span {
   color: var(--gray);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .contact-card strong {
   margin-top: 1px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .contact-card small {
   margin-top: 2px;
   color: var(--gray);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -1034,7 +1027,6 @@ main {
 .form-heading p {
   margin-top: 9px;
   color: var(--gray);
-  font-size: 17px;
 }
 
 #contactForm {
@@ -1050,7 +1042,7 @@ main {
 
   margin-bottom: 7px;
 
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 800;
 }
 
@@ -1072,8 +1064,6 @@ main {
 
   background: var(--white);
   color: var(--black);
-
-  font-size: 17px;
 
   transition:
     border-color 0.2s ease,
@@ -1108,7 +1098,7 @@ main {
   margin-top: 10px;
 
   color: var(--gray);
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -1147,7 +1137,7 @@ main {
 
   color: var(--gray);
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -1180,12 +1170,10 @@ main {
 
 .cart-empty p {
   font-weight: 800;
-  font-size: 17px;
 }
 
 .cart-empty small {
   color: var(--gray);
-  font-size: 15px;
 }
 
 .cart-item {
@@ -1200,19 +1188,16 @@ main {
   border-radius: 12px;
 
   background: var(--white);
-
-  font-size: 17px;
 }
 
 .cart-item-name {
   font-weight: 800;
-  font-size: 18px;
 }
 
 .cart-item-price {
   margin-top: 2px;
   color: var(--gray);
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .qty-controls {
@@ -1250,7 +1235,7 @@ main {
   background: transparent;
   color: var(--danger);
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -1272,11 +1257,10 @@ main {
 
 .cart-summary span {
   color: var(--gray);
-  font-size: 17px;
 }
 
 .cart-summary strong {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .cart-actions {
@@ -1323,8 +1307,6 @@ main {
   margin-top: 10px;
 
   color: #bdbdbd;
-
-  font-size: 18px;
 }
 
 .cta-card .section-label {
@@ -1367,7 +1349,7 @@ main {
 
   color: #999;
 
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer-links {
@@ -1379,12 +1361,12 @@ main {
 
 .footer-links h4 {
   margin-bottom: 7px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .footer-links a {
   color: #999;
-  font-size: 15px;
+  font-size: 13px;
 
   transition: color 0.2s ease;
 }
@@ -1406,7 +1388,7 @@ main {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   color: #777;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -1467,10 +1449,6 @@ main {
 
 @media (max-width: 650px) {
 
-  body {
-    font-size: 17px;
-  }
-
   .container {
     width: min(calc(100% - 28px), var(--container));
   }
@@ -1507,7 +1485,7 @@ main {
   .main-nav a {
     padding: 7px 9px;
 
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .main-nav a.active::after {
@@ -1528,13 +1506,8 @@ main {
     letter-spacing: -2.5px;
   }
 
-  .hero h1 {
-    font-size: 40px;
-    line-height: 1.1;
-  }
-
   .hero p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .hero-actions {
@@ -1547,10 +1520,6 @@ main {
 
   .page-hero {
     padding: 58px 14px;
-  }
-
-  .page-hero p {
-    font-size: 17px;
   }
 
   .products-section,
@@ -1578,25 +1547,12 @@ main {
     padding: 18px;
   }
 
-  .product-tag {
-    font-size: 12px;
-  }
-
-  .product h3 {
-    font-size: 20px;
-  }
-
-  .product p {
-    font-size: 16px;
-  }
-
   .product-bottom {
     align-items: flex-end;
   }
 
   .product-bottom .button {
     padding-inline: 13px;
-    font-size: 16px;
   }
 
   .values-grid {
@@ -1691,4 +1647,3 @@ main {
   }
 
 }
-```
