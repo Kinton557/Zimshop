@@ -1,330 +1,672 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZXE00TK2X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-WK78MJE5FQ');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZimShop | Online Shopping in Zimbabwe</title>
 
-    <title>ZimShop - Online Shopping in Zimbabwe</title>
+  <meta name="description" content="Shop affordable everyday products from ZimShop. Simple ordering in Zimbabwe.">
+  <meta name="theme-color" content="#111111">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYB3BPBRL4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-MYB3BPBRL4');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 
 <body>
 
-<header>
+  <!-- ================= HEADER ================= -->
 
-    <div class="logo">
-        ZimShop
+  <header class="site-header">
+
+    <div class="header-container">
+
+      <a href="index.html" class="logo" aria-label="ZimShop home">
+        <span class="logo-icon">Z</span>
+        <span>Zim<span>Shop</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+
+        <a href="index.html"
+           class="active"
+           aria-current="page">
+          Home
+        </a>
+
+        <a href="products.html">
+          Products
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
     </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-</header>
+  </header>
 
 
-<!-- HERO -->
+  <!-- ================= MAIN ================= -->
 
-<section class="hero">
+  <main>
 
-    <h1>Welcome to ZimShop</h1>
+    <!-- HERO -->
 
-    <p>
-        Affordable products. Simple shopping. Easy ordering.
-    </p>
+    <section class="home-hero">
 
-    <a href="products.html" class="button">
-        Shop Now
-    </a>
+      <div class="hero-content">
 
-</section>
+        <span class="eyebrow">
+          🇿🇼 Proudly Zimbabwean
+        </span>
 
+        <h1>
+          Affordable shopping.
+          <br>
+          <span>Made simple.</span>
+        </h1>
 
-<!-- SEARCH -->
+        <p>
+          Discover useful products, add what you need to your cart,
+          and order directly through WhatsApp.
+        </p>
 
-<section class="container">
+        <div class="hero-buttons">
 
-    <input
-        type="text"
-        id="searchBox"
-        placeholder="Search products..."
-        style="
-            width:100%;
-            padding:15px;
-            border:1px solid #ccc;
-            border-radius:5px;
-            font-size:16px;
-        "
-    >
+          <a href="products.html"
+             class="btn btn-primary">
+            Shop Now →
+          </a>
 
-</section>
+          <a href="about.html"
+             class="btn btn-secondary">
+            Learn About Us
+          </a>
 
+        </div>
 
-<!-- FEATURED PRODUCTS -->
-
-<section class="container">
-
-    <h2 class="section-title">
-        Featured Products
-    </h2>
+      </div>
 
 
-    <div class="products">
+      <div class="hero-panel" aria-hidden="true">
+
+        <div class="hero-panel-card">
+
+          <span>🛍️</span>
+
+          <strong>
+            Easy ordering
+          </strong>
+
+          <small>
+            Choose. Add. Order.
+          </small>
+
+        </div>
 
 
-        <!-- CHARGER -->
+        <div class="hero-panel-card">
 
-        <div class="product">
+          <span>💬</span>
 
-            <div class="product-image">
+          <strong>
+            WhatsApp ready
+          </strong>
 
-                <img
-                    src="images/phone-charger.jpg"
-                    alt="Phone Charger"
-                >
+          <small>
+            Send your order directly
+          </small>
 
-            </div>
+        </div>
+
+
+        <div class="hero-panel-card">
+
+          <span>💰</span>
+
+          <strong>
+            Affordable
+          </strong>
+
+          <small>
+            Everyday products
+          </small>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+
+    <section class="container home-products">
+
+      <div class="section-heading centered">
+
+        <span class="section-label">
+          FEATURED PRODUCTS
+        </span>
+
+        <h2>
+          Popular picks
+        </h2>
+
+        <p>
+          Start with some of our available products.
+        </p>
+
+      </div>
+
+
+      <!-- SEARCH -->
+
+      <div class="search-wrap">
+
+        <label for="searchBox">
+          Search products
+        </label>
+
+        <div class="search-field">
+
+          <span aria-hidden="true">
+            ⌕
+          </span>
+
+          <input
+            id="searchBox"
+            type="search"
+            placeholder="Search products..."
+            autocomplete="off"
+          >
+
+          <button
+            type="button"
+            id="clearSearch"
+            class="search-clear"
+            aria-label="Clear search"
+            hidden>
+            ×
+          </button>
+
+        </div>
+
+        <p
+          id="searchResults"
+          class="search-results"
+          aria-live="polite">
+        </p>
+
+      </div>
+
+
+      <!-- PRODUCTS -->
+
+      <div
+        class="products"
+        data-product-grid>
+
+
+        <!-- PHONE CHARGER -->
+
+        <article
+          class="product"
+          data-category="charging accessories">
+
+          <div class="product-image">
+
+            <img
+              src="images/phone-charger.jpg"
+              alt="Phone Charger"
+              loading="lazy">
+
+          </div>
+
+          <div class="product-body">
+
+            <span class="product-tag">
+              Charging
+            </span>
 
             <h3>
-                Phone Charger
+              Phone Charger
             </h3>
 
             <p>
-                Reliable charger for everyday phone use.
+              Reliable charger for everyday phone use.
             </p>
 
-            <div class="price">
+            <div class="product-bottom">
+
+              <strong class="price">
                 $8.00
+              </strong>
+
+              <button
+                class="button add-to-cart"
+                data-name="Phone Charger"
+                data-price="8">
+
+                Add to Cart
+
+              </button>
+
             </div>
 
-            <a
-                href="https://wa.me/263787863923?text=Hello%20ZimShop!%20I%20would%20like%20to%20order%20a%20Phone%20Charger."
-                target="_blank"
-                class="button"
-            >
-                Order
-            </a>
+          </div>
 
-        </div>
+        </article>
 
 
         <!-- USB CABLE -->
 
-        <div class="product">
+        <article
+          class="product"
+          data-category="charging accessories cables">
 
-            <div class="product-image">
+          <div class="product-image">
 
-                <img
-                    src="images/usb-cable.jpg"
-                    alt="USB Cable"
-                >
+            <img
+              src="images/usb-cable.jpg"
+              alt="USB Cable"
+              loading="lazy">
 
-            </div>
+          </div>
+
+          <div class="product-body">
+
+            <span class="product-tag">
+              Accessories
+            </span>
 
             <h3>
-                USB Cable
+              USB Cable
             </h3>
 
             <p>
-                Charging and data transfer USB cable.
+              Charging and data transfer USB cable.
             </p>
 
-            <div class="price">
+            <div class="product-bottom">
+
+              <strong class="price">
                 $3.00
+              </strong>
+
+              <button
+                class="button add-to-cart"
+                data-name="USB Cable"
+                data-price="3">
+
+                Add to Cart
+
+              </button>
+
             </div>
 
-            <a
-                href="https://wa.me/263787863923?text=Hello%20ZimShop!%20I%20would%20like%20to%20order%20a%20USB%20Cable."
-                target="_blank"
-                class="button"
-            >
-                Order
-            </a>
+          </div>
 
-        </div>
+        </article>
 
 
         <!-- EARPHONES -->
 
-        <div class="product">
+        <article
+          class="product"
+          data-category="audio accessories">
 
-            <div class="product-image">
+          <div class="product-image">
 
-                <img
-                    src="images/earphones.jpg"
-                    alt="Earphones"
-                >
+            <img
+              src="images/earphones.jpg"
+              alt="Earphones"
+              loading="lazy">
 
-            </div>
+          </div>
+
+          <div class="product-body">
+
+            <span class="product-tag">
+              Audio
+            </span>
 
             <h3>
-                Earphones
+              Earphones
             </h3>
 
             <p>
-                Comfortable earphones for music and calls.
+              Comfortable wired earphones for music and calls.
             </p>
 
-            <div class="price">
+            <div class="product-bottom">
+
+              <strong class="price">
                 $5.00
+              </strong>
+
+              <button
+                class="button add-to-cart"
+                data-name="Earphones"
+                data-price="5">
+
+                Add to Cart
+
+              </button>
+
             </div>
 
-            <a
-                href="https://wa.me/263787863923?text=Hello%20ZimShop!%20I%20would%20like%20to%20order%20Earphones."
-                target="_blank"
-                class="button"
-            >
-                Order
-            </a>
+          </div>
 
-        </div>
+        </article>
 
 
         <!-- POWER BANK -->
 
-        <div class="product">
+        <article
+          class="product"
+          data-category="power charging">
 
-            <div class="product-image">
+          <div class="product-image">
 
-                <img
-                    src="images/power-bank.jpg"
-                    alt="Power Bank"
-                >
+            <img
+              src="images/power-bank.jpg"
+              alt="Power Bank"
+              loading="lazy">
 
-            </div>
+          </div>
+
+          <div class="product-body">
+
+            <span class="product-tag">
+              Power
+            </span>
 
             <h3>
-                Power Bank
+              Power Bank
             </h3>
 
             <p>
-                Portable power for your mobile phone.
+              Portable power for your mobile phone.
             </p>
 
-            <div class="price">
+            <div class="product-bottom">
+
+              <strong class="price">
                 $15.00
+              </strong>
+
+              <button
+                class="button add-to-cart"
+                data-name="Power Bank"
+                data-price="15">
+
+                Add to Cart
+
+              </button>
+
             </div>
 
-            <a
-                href="https://wa.me/263787863923?text=Hello%20ZimShop!%20I%20would%20like%20to%20order%20a%20Power%20Bank."
-                target="_blank"
-                class="button"
-            >
-                Order
-            </a>
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- NO SEARCH RESULTS -->
+
+      <div
+        class="empty-state"
+        data-search-empty
+        hidden>
+
+        <div>
+          🔎
+        </div>
+
+        <h3>
+          No products found
+        </h3>
+
+        <p>
+          Try another product name or keyword.
+        </p>
+
+      </div>
+
+
+      <div class="center-actions">
+
+        <a
+          href="products.html"
+          class="btn btn-dark">
+
+          View All Products →
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= BENEFITS ================= -->
+
+    <section class="benefits-section">
+
+      <div class="container">
+
+        <div class="benefit-grid">
+
+          <article>
+
+            <span>
+              💰
+            </span>
+
+            <h3>
+              Affordable
+            </h3>
+
+            <p>
+              Useful products at accessible prices.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>
+              📲
+            </span>
+
+            <h3>
+              Easy Ordering
+            </h3>
+
+            <p>
+              Build your cart and send the order on WhatsApp.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>
+              🤝
+            </span>
+
+            <h3>
+              Customer Focused
+            </h3>
+
+            <p>
+              Simple communication from browsing to ordering.
+            </p>
+
+          </article>
 
         </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section">
+
+      <div class="cta-container">
+
+        <div>
+
+          <span class="section-label">
+            READY TO SHOP?
+          </span>
+
+          <h2>
+            Find something you'll love.
+          </h2>
+
+          <p>
+            Browse the full ZimShop catalogue
+            and start your order.
+          </p>
+
+        </div>
+
+        <a
+          href="products.html"
+          class="btn btn-light">
+
+          Browse Products →
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+
+        <a
+          href="index.html"
+          class="logo footer-logo">
+
+          <span class="logo-icon">
+            Z
+          </span>
+
+          <span>
+            Zim<span>Shop</span>
+          </span>
+
+        </a>
+
+        <p>
+          Making online shopping simple
+          and convenient in Zimbabwe.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>
+          Quick Links
+        </h4>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="products.html">
+          Products
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>
+          Shop
+        </h4>
+
+        <a href="products.html">
+          Browse Products
+        </a>
+
+        <a href="contact.html">
+          Contact Us
+        </a>
+
+      </div>
 
     </div>
 
-</section>
 
+    <div class="footer-bottom">
 
-<!-- WHY ZIMSHOP -->
-
-<section class="container">
-
-    <h2 class="section-title">
-        Why Shop With Us?
-    </h2>
-
-
-    <div class="products">
-
-
-        <div class="product">
-
-            <h2>
-                💰 Affordable
-            </h2>
-
-            <p>
-                We provide useful products at affordable prices.
-            </p>
-
-        </div>
-
-
-        <div class="product">
-
-            <h2>
-                📱 Easy Ordering
-            </h2>
-
-            <p>
-                Order directly through WhatsApp.
-            </p>
-
-        </div>
-
-
-        <div class="product">
-
-            <h2>
-                🤝 Customer Focused
-            </h2>
-
-            <p>
-                We aim to provide simple and convenient shopping.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CALL TO ACTION -->
-
-<section class="hero">
-
-    <h2>
-        Ready to Shop?
-    </h2>
-
-    <p>
-        Browse our products and place your order today.
-    </p>
-
-    <br>
-
-    <a href="products.html" class="button">
-        View All Products
-    </a>
-
-</section>
-
-
-<footer>
-
-    <p>
+      <p>
         © 2026 ZimShop. All rights reserved.
-    </p>
+      </p>
 
-    <p>
-        Zimbabwe
-    </p>
+      <p>
+        🇿🇼 Zimbabwe
+      </p>
 
-</footer>
+    </div>
+
+  </footer>
 
 
-<script src="script.js"></script>
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
 
 </body>
-
 </html>
