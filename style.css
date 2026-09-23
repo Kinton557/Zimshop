@@ -1,3 +1,4 @@
+```css
 /* =========================================================
    ZIMSHOP — MAIN STYLESHEET
    ========================================================= */
@@ -40,6 +41,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -54,7 +56,8 @@ body {
     Roboto,
     Arial,
     sans-serif;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -180,7 +183,7 @@ main {
   border-radius: 9px;
 
   color: #555;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 
   transition:
@@ -234,7 +237,7 @@ main {
   background: var(--black);
   color: var(--white);
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 
   transition:
@@ -318,7 +321,7 @@ main {
   background: var(--accent-light);
   color: var(--accent-dark);
 
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.4px;
   text-transform: uppercase;
@@ -345,8 +348,8 @@ main {
   margin-top: 25px;
 
   color: var(--gray);
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .hero-actions {
@@ -388,7 +391,7 @@ main {
   margin-top: 20px;
 
   color: var(--gray);
-  font-size: 17px;
+  font-size: 18px;
 }
 
 
@@ -408,9 +411,9 @@ main {
 
   color: var(--accent-dark);
 
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 900;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -420,7 +423,7 @@ main {
 .form-heading h2,
 .cart-header h2,
 .cta-card h2 {
-  font-size: clamp(30px, 4vw, 44px);
+  font-size: clamp(34px, 4vw, 48px);
   line-height: 1.1;
   letter-spacing: -1.5px;
 }
@@ -435,6 +438,7 @@ main {
 .section-heading p {
   margin-top: 13px;
   color: var(--gray);
+  font-size: 18px;
 }
 
 
@@ -541,15 +545,15 @@ main {
   background: var(--accent-light);
   color: var(--accent-dark);
 
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }
 
 .product h3 {
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 21px;
+  line-height: 1.25;
   letter-spacing: -0.4px;
 }
 
@@ -558,8 +562,8 @@ main {
 
   color: var(--gray);
 
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.55;
 }
 
 .product-bottom {
@@ -574,7 +578,7 @@ main {
 
 .price {
   color: var(--black);
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 900;
 }
 
@@ -597,7 +601,7 @@ main {
 
   margin-bottom: 9px;
 
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -633,7 +637,7 @@ main {
   background: var(--white);
 
   color: var(--black);
-  font-size: 15px;
+  font-size: 18px;
 
   box-shadow: var(--shadow-sm);
 
@@ -682,7 +686,7 @@ main {
 
   color: var(--gray);
 
-  font-size: 13px;
+  font-size: 15px;
 }
 
 
@@ -718,6 +722,7 @@ main {
 .empty-state p {
   margin-top: 6px;
   color: var(--gray);
+  font-size: 17px;
 }
 
 
@@ -753,13 +758,13 @@ main {
 }
 
 .benefit h3 {
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .benefit p {
   margin-top: 7px;
   color: #b9b9b9;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -787,7 +792,7 @@ main {
   margin-top: 18px;
 
   color: var(--gray);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .about-highlight {
@@ -821,6 +826,7 @@ main {
 .about-highlight p {
   margin-top: 10px;
   color: #c4c4c4;
+  font-size: 17px;
 }
 
 
@@ -856,13 +862,13 @@ main {
 }
 
 .value-card h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .value-card p {
   margin-top: 7px;
   color: var(--gray);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -896,20 +902,20 @@ main {
 .step-number {
   flex: 0 0 auto;
 
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 900;
 
   color: var(--accent);
 }
 
 .step-card h3 {
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .step-card p {
   margin-top: 7px;
   color: var(--gray);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -936,6 +942,7 @@ main {
 .contact-info > p {
   margin-top: 18px;
   color: var(--gray);
+  font-size: 18px;
 }
 
 .contact-cards {
@@ -992,20 +999,20 @@ main {
 
 .contact-card span {
   color: var(--gray);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .contact-card strong {
   margin-top: 1px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .contact-card small {
   margin-top: 2px;
   color: var(--gray);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -1027,6 +1034,7 @@ main {
 .form-heading p {
   margin-top: 9px;
   color: var(--gray);
+  font-size: 17px;
 }
 
 #contactForm {
@@ -1042,7 +1050,7 @@ main {
 
   margin-bottom: 7px;
 
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -1064,6 +1072,8 @@ main {
 
   background: var(--white);
   color: var(--black);
+
+  font-size: 17px;
 
   transition:
     border-color 0.2s ease,
@@ -1098,7 +1108,7 @@ main {
   margin-top: 10px;
 
   color: var(--gray);
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -1137,7 +1147,7 @@ main {
 
   color: var(--gray);
 
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -1170,10 +1180,12 @@ main {
 
 .cart-empty p {
   font-weight: 800;
+  font-size: 17px;
 }
 
 .cart-empty small {
   color: var(--gray);
+  font-size: 15px;
 }
 
 .cart-item {
@@ -1188,16 +1200,19 @@ main {
   border-radius: 12px;
 
   background: var(--white);
+
+  font-size: 17px;
 }
 
 .cart-item-name {
   font-weight: 800;
+  font-size: 18px;
 }
 
 .cart-item-price {
   margin-top: 2px;
   color: var(--gray);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .qty-controls {
@@ -1235,7 +1250,7 @@ main {
   background: transparent;
   color: var(--danger);
 
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -1257,10 +1272,11 @@ main {
 
 .cart-summary span {
   color: var(--gray);
+  font-size: 17px;
 }
 
 .cart-summary strong {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .cart-actions {
@@ -1307,6 +1323,8 @@ main {
   margin-top: 10px;
 
   color: #bdbdbd;
+
+  font-size: 18px;
 }
 
 .cta-card .section-label {
@@ -1349,7 +1367,7 @@ main {
 
   color: #999;
 
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer-links {
@@ -1361,12 +1379,12 @@ main {
 
 .footer-links h4 {
   margin-bottom: 7px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer-links a {
   color: #999;
-  font-size: 13px;
+  font-size: 15px;
 
   transition: color 0.2s ease;
 }
@@ -1388,7 +1406,7 @@ main {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   color: #777;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -1449,6 +1467,10 @@ main {
 
 @media (max-width: 650px) {
 
+  body {
+    font-size: 17px;
+  }
+
   .container {
     width: min(calc(100% - 28px), var(--container));
   }
@@ -1485,7 +1507,7 @@ main {
   .main-nav a {
     padding: 7px 9px;
 
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .main-nav a.active::after {
@@ -1506,8 +1528,13 @@ main {
     letter-spacing: -2.5px;
   }
 
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
   .hero p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .hero-actions {
@@ -1520,6 +1547,10 @@ main {
 
   .page-hero {
     padding: 58px 14px;
+  }
+
+  .page-hero p {
+    font-size: 17px;
   }
 
   .products-section,
@@ -1547,12 +1578,25 @@ main {
     padding: 18px;
   }
 
+  .product-tag {
+    font-size: 12px;
+  }
+
+  .product h3 {
+    font-size: 20px;
+  }
+
+  .product p {
+    font-size: 16px;
+  }
+
   .product-bottom {
     align-items: flex-end;
   }
 
   .product-bottom .button {
     padding-inline: 13px;
+    font-size: 16px;
   }
 
   .values-grid {
@@ -1647,163 +1691,4 @@ main {
   }
 
 }
-/* ================================
-   ZimShop Typography Upgrade
-   ================================ */
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-size: 18px;
-  line-height: 1.65;
-}
-
-/* Header */
-.site-header a,
-.nav a {
-  font-size: 16px;
-}
-
-/* Hero */
-.hero h1 {
-  font-size: clamp(42px, 5vw, 68px);
-  line-height: 1.08;
-  letter-spacing: -1.5px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 20px;
-  line-height: 1.6;
-  max-width: 720px;
-}
-
-/* Hero buttons */
-.hero .button,
-.hero a {
-  font-size: 17px;
-}
-
-/* Hero benefits */
-.hero li,
-.hero .benefit,
-.hero .hero-benefits {
-  font-size: 17px;
-  line-height: 1.6;
-}
-
-/* Section headings */
-.section-label {
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
-.section-title,
-.products-section h2 {
-  font-size: clamp(36px, 4vw, 52px);
-  line-height: 1.15;
-}
-
-.section-description {
-  font-size: 18px;
-}
-
-/* Search */
-.search-label,
-.search-box label {
-  font-size: 16px;
-  font-weight: 700;
-}
-
-#searchBox {
-  font-size: 18px;
-}
-
-/* Product cards */
-.product h3 {
-  font-size: 21px;
-  line-height: 1.25;
-}
-
-.product p {
-  font-size: 17px;
-  line-height: 1.55;
-}
-
-.product .price {
-  font-size: 22px;
-}
-
-.product button,
-.add-to-cart {
-  font-size: 16px;
-}
-
-/* Product category */
-.product .category,
-.product-category {
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
-/* Cart */
-.cart-item {
-  font-size: 17px;
-}
-
-.cart-item-name {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.cart-item-price {
-  font-size: 16px;
-}
-
-/* General buttons */
-button,
-.button {
-  font-size: 16px;
-}
-
-/* Footer */
-footer {
-  font-size: 16px;
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  body {
-    font-size: 17px;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-    line-height: 1.1;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .hero li,
-  .hero .benefit,
-  .hero .hero-benefits {
-    font-size: 16px;
-  }
-
-  .section-title,
-  .products-section h2 {
-    font-size: 34px;
-  }
-
-  .product h3 {
-    font-size: 20px;
-  }
-
-  .product p {
-    font-size: 16px;
-  }
-}
+```
