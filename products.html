@@ -1,11 +1,519 @@
-<!DOCTYPE html> <html lang="en"> <head> 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZXE00TK2X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-WK78MJE5FQ');
-    </script>
-  <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>ZimShop - Products</title> <link rel="stylesheet" href="style.css"> </head> <body> <!-- HEADER --> <header> <div class="logo"> ZimShop </div> <nav> <a href="index.html">Home</a> <a href="products.html">Products</a> <a href="about.html">About</a> <a href="contact.html">Contact</a> </nav> </header> <!-- PAGE INTRO --> <section class="hero"> <h1>Our Products</h1> <p> Find affordable products at ZimShop. </p> </section> <!-- SEARCH --> <section class="container"> <input type="text" id="searchBox" placeholder="Search for a product..." style=" width:100%; padding:15px; border:1px solid #ccc; border-radius:5px; font-size:16px; "> </section> <!-- PRODUCT LIST --> <section class="container"> <h2 class="section-title"> Available Products </h2> <div class="products"> <!-- PHONE CHARGER --> <div class="product"> <div class="product-image"> <img src="images/phone-charger.jpg" alt="Phone Charger"> </div> <h3>Phone Charger</h3> <p> Reliable charger for everyday phone use. </p> <div class="price"> $8.00 </div> <button class="button add-to-cart" data-name="Phone Charger" data-price="8"> Add to Cart </button> </div> <!-- USB CABLE --> <div class="product"> <div class="product-image"> <img src="images/usb-cable.jpg" alt="USB Cable"> </div> <h3>USB Cable</h3> <p> Charging and data transfer USB cable. </p> <div class="price"> $3.00 </div> <button class="button add-to-cart" data-name="USB Cable" data-price="3"> Add to Cart </button> </div> <!-- EARPHONES --> <div class="product"> <div class="product-image"> <img src="images/earphones.jpg" alt="Earphones"> </div> <h3>Earphones</h3> <p> Comfortable wired earphones for music and calls. </p> <div class="price"> $5.00 </div> <button class="button add-to-cart" data-name="Earphones" data-price="5"> Add to Cart </button> </div> <!-- POWER BANK --> <div class="product"> <div class="product-image"> <img src="images/power-bank.jpg" alt="Power Bank"> </div> <h3>Power Bank</h3> <p> Portable power for your mobile phone. </p> <div class="price"> $15.00 </div> <button class="button add-to-cart" data-name="Power Bank" data-price="15"> Add to Cart </button> </div> <!-- PHONE CASE --> <div class="product"> <div class="product-image"> <img src="images/phone-case.jpg" alt="Phone Case"> </div> <h3>Phone Case</h3> <p> Protective case for your smartphone. </p> <div class="price"> $6.00 </div> <button class="button add-to-cart" data-name="Phone Case" data-price="6"> Add to Cart </button> </div> <!-- MEMORY CARD --> <div class="product"> <div class="product-image"> <img src="images/memory-card.jpg" alt="Memory Card"> </div> <h3>Memory Card</h3> <p> Extra storage for phones and devices. </p> <div class="price"> $10.00 </div> <button class="button add-to-cart" data-name="Memory Card" data-price="10"> Add to Cart </button> </div> </div> </section> <!-- SHOPPING CART --> <section class="container"> <div class="product"> <h2>🛒 Your Cart</h2> <br> <div id="cart-items"> <p> Your cart is empty. </p> </div> <hr> <p> Items: <strong id="cart-count">0</strong> </p> <p> Total: <strong> $<span id="cart-total">0.00</span> </strong> </p> <br> <button class="button" id="clear-cart"> Clear Cart </button> <button class="button" id="whatsapp-order"> Order on WhatsApp </button> </div> </section> <!-- FOOTER --> <footer> <p> © 2026 ZimShop. All rights reserved. </p> <p> Zimbabwe </p> </footer> <!-- JAVASCRIPT --> <script src="script.js"></script> </body> </html> 
+  <title>ZimShop | Products</title>
+  <meta name="description" content="Browse available ZimShop products and order through WhatsApp.">
+  <meta name="theme-color" content="#111111">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYB3BPBRL4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-MYB3BPBRL4');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-container">
+
+    <a href="index.html" class="logo" aria-label="ZimShop Home">
+      <span class="logo-icon">Z</span>
+      <span>Zim<span>Shop</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active" aria-current="page">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-content">
+
+      <span class="eyebrow">🛍️ ZimShop catalogue</span>
+
+      <h1>
+        Our
+        <span>Products.</span>
+      </h1>
+
+      <p>
+        Find useful, affordable products and add them to your cart.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- Products -->
+  <section class="container products-page">
+
+    <div class="search-wrap large-search">
+
+      <label for="searchBox">
+        Search the catalogue
+      </label>
+
+      <div class="search-field">
+
+        <span aria-hidden="true">⌕</span>
+
+        <input
+          type="search"
+          id="searchBox"
+          placeholder="Search by product, description or category..."
+          autocomplete="off"
+        >
+
+        <button
+          type="button"
+          id="clearSearch"
+          class="search-clear"
+          aria-label="Clear search"
+          hidden
+        >
+          ×
+        </button>
+
+      </div>
+
+      <p
+        id="searchResults"
+        class="search-results"
+        aria-live="polite"
+      ></p>
+
+    </div>
+
+
+    <div class="products" data-product-grid>
+
+      <!-- Phone Charger -->
+      <article class="product" data-category="charging accessories">
+
+        <div class="product-image">
+          <img
+            src="images/phone-charger.jpg"
+            alt="Phone Charger"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">Charging</span>
+
+          <h3>Phone Charger</h3>
+
+          <p>
+            Reliable charger for everyday phone use.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong class="price">$8.00</strong>
+
+            <button
+              class="button add-to-cart"
+              type="button"
+              data-name="Phone Charger"
+              data-price="8"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- USB Cable -->
+      <article class="product" data-category="charging accessories cables">
+
+        <div class="product-image">
+          <img
+            src="images/usb-cable.jpg"
+            alt="USB Cable"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">Accessories</span>
+
+          <h3>USB Cable</h3>
+
+          <p>
+            Charging and data transfer USB cable.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong class="price">$3.00</strong>
+
+            <button
+              class="button add-to-cart"
+              type="button"
+              data-name="USB Cable"
+              data-price="3"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- Earphones -->
+      <article class="product" data-category="audio accessories">
+
+        <div class="product-image">
+          <img
+            src="images/earphones.jpg"
+            alt="Earphones"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">Audio</span>
+
+          <h3>Earphones</h3>
+
+          <p>
+            Comfortable wired earphones for music and calls.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong class="price">$5.00</strong>
+
+            <button
+              class="button add-to-cart"
+              type="button"
+              data-name="Earphones"
+              data-price="5"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- Power Bank -->
+      <article class="product" data-category="power charging">
+
+        <div class="product-image">
+          <img
+            src="images/power-bank.jpg"
+            alt="Power Bank"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">Power</span>
+
+          <h3>Power Bank</h3>
+
+          <p>
+            Portable power for your mobile phone.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong class="price">$15.00</strong>
+
+            <button
+              class="button add-to-cart"
+              type="button"
+              data-name="Power Bank"
+              data-price="15"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- Phone Case -->
+      <article class="product" data-category="phone accessories protection">
+
+        <div class="product-image">
+          <img
+            src="images/phone-case.jpg"
+            alt="Phone Case"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">Protection</span>
+
+          <h3>Phone Case</h3>
+
+          <p>
+            Protective case for your smartphone.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong class="price">$6.00</strong>
+
+            <button
+              class="button add-to-cart"
+              type="button"
+              data-name="Phone Case"
+              data-price="6"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- Memory Card -->
+      <article class="product" data-category="storage memory accessories">
+
+        <div class="product-image">
+          <img
+            src="images/memory-card.jpg"
+            alt="Memory Card"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">Storage</span>
+
+          <h3>Memory Card</h3>
+
+          <p>
+            Extra storage for phones and devices.
+          </p>
+
+          <div class="product-bottom">
+
+            <strong class="price">$10.00</strong>
+
+            <button
+              class="button add-to-cart"
+              type="button"
+              data-name="Memory Card"
+              data-price="10"
+            >
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <!-- Empty Search State -->
+    <div
+      class="empty-state"
+      data-search-empty
+      hidden
+    >
+
+      <div>🔎</div>
+
+      <h3>No products found</h3>
+
+      <p>
+        Try another name, description or category.
+      </p>
+
+    </div>
+
+
+    <!-- Cart -->
+    <section
+      class="cart-section"
+      aria-labelledby="cart-heading"
+    >
+
+      <div class="cart-header">
+
+        <div>
+
+          <span class="section-label">YOUR ORDER</span>
+
+          <h2 id="cart-heading">🛒 Your Cart</h2>
+
+        </div>
+
+        <span class="cart-pill">
+          <span id="cart-count">0</span>
+          items
+        </span>
+
+      </div>
+
+
+      <div
+        id="cart-items"
+        class="cart-items"
+      >
+
+        <div class="cart-empty">
+
+          <span>🛒</span>
+
+          <p>Your cart is empty.</p>
+
+          <small>
+            Add a product above to get started.
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <div class="cart-summary">
+
+        <div>
+
+          <span>Subtotal</span>
+
+          <strong>
+            $<span id="cart-total">0.00</span>
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="cart-actions">
+
+        <button
+          class="button button-light"
+          id="clear-cart"
+          type="button"
+        >
+          Clear Cart
+        </button>
+
+        <button
+          class="button button-whatsapp"
+          id="whatsapp-order"
+          type="button"
+        >
+          Order on WhatsApp ↗
+        </button>
+
+      </div>
+
+    </section>
+
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+
+      <a href="index.html" class="logo footer-logo">
+        <span class="logo-icon">Z</span>
+        <span>Zim<span>Shop</span></span>
+      </a>
+
+      <p>
+        Making online shopping simple and convenient in Zimbabwe.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <h4>Quick Links</h4>
+
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <h4>Shop</h4>
+
+      <a href="products.html">Browse Products</a>
+      <a href="contact.html">Contact Us</a>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <p>© 2026 ZimShop. All rights reserved.</p>
+
+    <p>🇿🇼 Zimbabwe</p>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
